@@ -1,0 +1,62 @@
+body {
+    background-color: #ddd;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+header {
+    padding: 24px;
+    background-color: #252617;
+    border-bottom: 6px solid #64732F;
+    color: #CAD959;
+}
+header .author {
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+main {
+    margin: 48px 24px;
+}
+
+.principles-grid {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+.principles-grid h2 {
+    margin: 0; padding: 8px 0;
+    text-align: center;
+    background-color: #0D0D0D;
+    color: #e6e6e6;
+}
+.principles-grid .card {
+    padding: 12px 24px;
+    background-color: #8C8C8C;
+}
+.principles-grid h3 {
+    margin: 0 0 16px 0;
+    font-weight: 900;
+}
+.principles-grid .link {
+    margin: 0 0 16px 0;
+}
+.principles-grid .link a {
+    color: inherit;
+}
+.principles-grid .description {
+    margin: 0 0 32px 0;
+}
+.principles-grid .image {
+    text-align: center;
+}
+.principles-grid .image img {
+    max-width: 100%;
+}
+
+footer {
+    padding: 24px;
+    text-align: center;
+    background-color: #34401A;
+    color: #CAD959;
+}
