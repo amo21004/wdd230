@@ -1,0 +1,13 @@
+@media (min-width: 800px) {
+    header .columns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav ul {
+        display: flex;
+    }
+    header nav li:not(:last-child) {
+        margin: 0 16px 0 0;
+    }
+}
