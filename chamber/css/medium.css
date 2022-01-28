@@ -1,0 +1,48 @@
+@media (min-width: 600px) {
+  header .branding {
+    display: flex;
+    align-items: center;
+  }
+  header .branding img {
+    margin: 0 24px 0 0;
+    width: auto;
+  }
+  header .branding span {
+    display: block;
+    font-weight: bold;
+  }
+
+  main .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "content content"
+      "news news"
+      "spotlight spotlight"
+      "join join"
+      "event weather";
+  }
+
+  footer .columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+  }
+  footer .branding {
+    display: flex;
+    margin: 0 16px 0 0;
+    align-items: center;
+  }
+  footer .branding img {
+    margin: 0 24px 0 0;
+  }
+  footer .branding address {
+    margin: 0;
+  }
+  footer .contact {
+    text-align: center;
+  }
+}

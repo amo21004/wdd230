@@ -1,0 +1,178 @@
+body {
+  padding: 24px;
+  background-color: #262f40;
+  font-family: "Open Sans", sans-serif;
+  color: #f2f2f2;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  position: relative;
+  padding: 24px;
+  background-color: #f2f2f2;
+  box-shadow: 2px 2px 2px #535d73;
+  color: #262f40;
+}
+header .columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .branding img {
+  width: 76px;
+}
+header .branding span {
+  display: none;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header .links {
+  display: none;
+}
+header .links a {
+  display: block;
+  padding: 8px 16px;
+  background-color: #535d73;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+header .links .active,
+header .links a:hover {
+  background-color: #262f40;
+}
+@media (max-width: 999px) {
+  header .links.open {
+    position: absolute;
+    left: 0; right: 25%;
+    top: 0; bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  header .links.open li {
+    flex: 1;
+  }
+  header .links.open li a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    box-sizing: border-box;
+  }
+}
+header .social {
+  display: flex;
+}
+header .social li:not(:last-child) {
+  margin: 0 16px 0 0;
+}
+header .social img {
+  width: 28px;
+}
+header .toggle {
+  margin: 0 0 0 24px;
+}
+header .toggle .none {
+  display: none;
+}
+header .current-date {
+  margin: 16px 0 0 0;
+  padding: 8px 0;
+  text-align: center;
+  background-color: #424a59;
+  color: #f2f2f2;
+}
+
+main {
+  margin: 48px 0;
+}
+main .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "content"
+    "event"
+    "weather"
+    "join"
+    "news"
+    "spotlight";
+  color: #f2f2f2;
+}
+main .grid > div {
+  padding: 16px;
+  background-color: #535d73;
+}
+main .grid .event {
+  grid-area: event;
+}
+main .grid .weather {
+  grid-area: weather;
+}
+main .grid .join {
+  grid-area: join;
+}
+main .grid .content {
+  grid-area: content;
+}
+main .grid .news {
+  grid-area: news;
+}
+main .grid .spotlight {
+  grid-area: spotlight;
+}
+
+footer {
+  padding: 24px;
+  background-color: #424a59;
+  border: 2px solid #979ca6;
+  color: #f2f2f2;
+}
+footer a {
+  text-decoration: none;
+}
+footer hr {
+  margin: 24px 0;
+  height: 1px;
+  background-color: #979ca6;
+  border: 0;
+}
+footer .columns {
+  text-align: center;
+}
+footer .branding {
+  margin: 0 0 24px 0;
+}
+footer .branding img {
+  filter: brightness(0) invert(1);
+}
+footer address {
+  margin: 12px 0 0 0;
+  font-style: normal;
+}
+footer .credits {
+  text-align: center;
+}
