@@ -1,21 +1,27 @@
-document.addEventListener('DOMContentLoaded', function () {
-    document
-    .querySelectorAll('header .toggle img')
-    .forEach((element) => {
-      element.addEventListener('click', function () {
-        document.querySelector('header .links').classList.toggle('open');
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("header .toggle img").forEach((element) => {
+    element.addEventListener("click", function () {
+      document.querySelector("header .links").classList.toggle("open");
 
-        document
-          .querySelectorAll('header .toggle img')
-          .forEach((element) => {
-            element.classList.toggle('none');
-          });
+      document.querySelectorAll("header .toggle img").forEach((element) => {
+        element.classList.toggle("none");
       });
     });
+  });
 
-    document.querySelector('header .current-date').innerHTML = new Intl.DateTimeFormat('en-US', { dateStyle: 'full' }).format(new Date());
+  let current_date = new Date();
 
-    document.querySelector('footer .year').innerHTML = (new Date()).getFullYear();
+  if (current_date.getDay() == 1 || current_date.getDay() == 2) {
+    document.querySelector(".cta").style.display = "block";
+  }
 
-    document.querySelector('footer .last-updated').innerHTML = document.lastModified;
+  document.querySelector("header .current-date").innerHTML =
+    new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+      current_date
+    );
+
+  document.querySelector("footer .year").innerHTML = current_date.getFullYear();
+
+  document.querySelector("footer .last-updated").innerHTML =
+    document.lastModified;
 });

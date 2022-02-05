@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/base.css" />
@@ -26,6 +26,10 @@
     <script src="js/common.js"></script>
   </head>
   <body>
+    <div class="cta">
+      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+    </div>
+
     <header>
       <div class="columns">
         <div class="branding">
@@ -70,21 +74,130 @@
 
     <main>
       <div class="grid">
-        <div class="event"><h3>Event</h3></div>
-        <div class="weather"><h3>Weather</h3></div>
-        <div class="join"><h3>Join</h3></div>
-        <div class="content">
-          <h1>Hero</h1>
+        <div class="event">
+          <h3>Quarterly Meet</h3>
 
-          <h2>CTA</h2>
+          <p>
+            🎉 You are invited to our Quarterly Meet which will be held on the
+            15th of February at Tank Bund. For more details,
+            <a href="#">click here</a>. 🎉
+          </p>
         </div>
-        <div class="news"><h3>News release</h3></div>
+        <div class="weather">
+          <h3>Weather</h3>
+
+          <a
+            class="weatherwidget-io"
+            href="https://forecast7.com/en/17d3978d49/hyderabad/"
+            data-label_1="HYDERABAD"
+            data-label_2="WEATHER"
+            data-days="3"
+            data-font="Open Sans"
+            data-theme="pure"
+            >HYDERABAD WEATHER</a
+          >
+          <script>
+            !(function (d, s, id) {
+              var js,
+                fjs = d.getElementsByTagName(s)[0];
+              if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://weatherwidget.io/js/widget.min.js";
+                fjs.parentNode.insertBefore(js, fjs);
+              }
+            })(document, "script", "weatherwidget-io-js");
+          </script>
+        </div>
+        <div class="join">
+          <h3>Join HCOC</h3>
+
+          <p>
+            Join to connect and network with other business owners from
+            Hyderabad. Stay up-to-date with everything that is happening.
+          </p>
+
+          <div class="button"><a href="#">Join Us!</a></div>
+        </div>
+        <div class="content">
+          <img src="images/building.jpg" alt="" />
+
+          <h1>Welcome to HCOC</h1>
+
+          <a href="#" class="button">Join HCOC</a>
+        </div>
+        <div class="news">
+          <h3>News release</h3>
+
+          <ul>
+            <li>
+              HCOC reaches a new milestone! The chamber now has
+              <strong>10,000</strong> members. [<a href="#">Read More</a>]
+            </li>
+            <li>
+              HCOC has been featured in a column by <em>The Times of India</em>.
+              [<a href="#">Read More</a>]
+            </li>
+            <li>
+              Live webinar on the 4th of January. [<a href="#">Read More</a>]
+            </li>
+          </ul>
+        </div>
         <div class="spotlight">
-          <h3>Spotlight 1</h3>
+          <section>
+            <h3>Urban Caterers</h3>
 
-          <h3>Spotlight 2</h3>
+            <p>
+              Providing catering services throughout Hyderabad since 2008. Urban
+              Caterers can take care of food services for weddings and
+              receptions, business meetings, and other events.
+            </p>
 
-          <h3>Spotlight 3</h3>
+            <hr />
+
+            <div class="links">
+              <a href="tel">+91-9866000123</a> |
+              <a href="mailto">contact@urbancaterers.in</a> |
+              <a href="https://www.urbancaterers.in">www.urbancaterers.in</a>
+            </div>
+          </section>
+
+          <section>
+            <h3>Swiggy</h3>
+
+            <p>
+              Curbing hunger since 2014! Swiggy is the #1 food delivery service
+              in India. Now providing 24/7 services to all areas of Hyderabad!
+            </p>
+
+            <hr />
+
+            <div class="links">
+              Order now @ <a href="https://www.swiggy.com">www.swiggy.com</a>
+            </div>
+          </section>
+
+          <section>
+            <h3>21st Century Furnitures</h3>
+
+            <p>
+              Find contemporary furniture for homes and offices at 21st Century
+              Furnitures.
+            </p>
+
+            <hr />
+
+            <div class="links">
+              <a href="tel">+91-9866000123</a> |
+              <a href="mailto">contact@urbancaterers.in</a> |
+              <a href="https://www.urbancaterers.in">www.urbancaterers.in</a>
+            </div>
+
+            <address>
+              5-9-60/B/GF, Moghul Court Building, Deccan Towers, Beside TBZ
+              Jewellers, Basheerbagh, 500001
+            </address>
+          </section>
         </div>
       </div>
     </main>

@@ -22,6 +22,15 @@ img {
   max-width: 100%;
 }
 
+.cta {
+  display: none;
+  margin: 0 0 32px 0;
+  padding: 16px 0;
+  text-align: center;
+  background-color: #535d73;
+  color: #f2f2f2;
+}
+
 header {
   position: relative;
   padding: 24px;
@@ -66,8 +75,10 @@ header .links a:hover {
 @media (max-width: 999px) {
   header .links.open {
     position: absolute;
-    left: 0; right: 25%;
-    top: 0; bottom: 0;
+    left: 0;
+    right: 25%;
+    top: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
   }
@@ -107,6 +118,7 @@ header .current-date {
 main {
   margin: 48px 0;
 }
+
 main .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -126,23 +138,94 @@ main .grid > div {
   padding: 16px;
   background-color: #535d73;
 }
-main .grid .event {
+main .event {
   grid-area: event;
 }
-main .grid .weather {
+main .weather {
   grid-area: weather;
 }
-main .grid .join {
+main .join {
   grid-area: join;
 }
-main .grid .content {
+main .content {
+  position: relative;
+  padding: 0 !important;
   grid-area: content;
 }
-main .grid .news {
+main .news {
   grid-area: news;
 }
-main .grid .spotlight {
+main .spotlight {
   grid-area: spotlight;
+}
+
+main .event p {
+  padding: 16px;
+  background-color: #f2f2f2;
+  color: #262f40;
+}
+
+main .content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .content h1 {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  margin: 0;
+  padding: 8px;
+  background-color: #262f40;
+  color: #f2f2f2;
+}
+main .content .button {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  padding: 12px 36px;
+  text-align: center;
+  background-color: #900;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+main .join .button {
+  text-align: center;
+}
+main .join .button a {
+  display: inline-block;
+  padding: 12px 36px;
+  background-color: #900;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+main .news ul {
+  padding: 0 0 0 20px;
+}
+main .news li:not(:last-child) {
+  margin: 0 0 16px 0;
+}
+
+main .spotlight section {
+  padding: 16px;
+  background-color: #f2f2f2;
+  color: #262f40;
+}
+main .spotlight section:not(:last-child) {
+  margin: 0 0 24px 0;
+}
+main .spotlight hr {
+  margin: 16px 0;
+}
+main .spotlight .links {
+  text-align: center;
+}
+main .spotlight address {
+  margin: 8px 0 0 0;
+  text-align: center;
 }
 
 footer {
