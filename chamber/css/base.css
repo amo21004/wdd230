@@ -170,7 +170,7 @@ main .content img {
   height: 100%;
   object-fit: cover;
 }
-main .content h1 {
+main .content h3 {
   position: absolute;
   top: 16px;
   left: 16px;
@@ -253,6 +253,9 @@ footer .branding {
 }
 footer .branding img {
   filter: brightness(0) invert(1);
+}
+footer .contact a:not(:last-child) {
+  margin: 0 0 10px 0;
 }
 footer address {
   margin: 12px 0 0 0;
