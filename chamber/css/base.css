@@ -165,10 +165,45 @@ main .event p {
   color: #262f40;
 }
 
+main .weather .temperature-widget {
+  max-width: 200px;
+  text-align: center;
+}
+main .weather .temperature-widget img {
+  width: 64px;
+}
+main .weather .temperature-widget .temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .weather .temperature-widget .temperature .value {
+  margin: 0 0 0 12px;
+  font-size: 1.5rem;
+}
+main .weather .temperature-widget .summary {
+  margin: 0 0 12px 0;
+  padding: 0 0 12px 0;
+  border-bottom: 1px solid #fff;
+}
+main .weather .temperature-widget dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .weather .temperature-widget dt {
+  margin: 0 5px 0 0;
+  flex-basis: 120px;
+  text-align: right;
+}
+main .weather .temperature-widget dd {
+  margin: 0;
+}
+
 main .content img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: left;
 }
 main .content h3 {
   position: absolute;

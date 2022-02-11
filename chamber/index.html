@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
+    <script src="js/windchill.js"></script>
     <script src="js/common.js"></script>
   </head>
   <body>
@@ -35,7 +36,7 @@
     <header>
       <div class="columns">
         <div class="branding">
-          <img src="images/logo.png" alt="Hyderabad Chamber of Commerce" />
+          <img src="images/logo.webp" alt="Hyderabad Chamber of Commerce" />
 
           <span>
             Hyderabad<br />
@@ -54,12 +55,12 @@
           <ul class="social">
             <li>
               <a href="#"
-                ><img src="images/facebook-icon.png" alt="Facebook"
+                ><img src="images/facebook-icon.webp" alt="Facebook"
               /></a>
             </li>
             <li>
               <a href="#"
-                ><img src="images/linkedin-icon.png" alt="LinkedIn"
+                ><img src="images/linkedin-icon.webp" alt="LinkedIn"
               /></a>
             </li>
           </ul>
@@ -88,6 +89,24 @@
         <div class="weather">
           <h3>Weather</h3>
 
+          <div class="temperature-widget">
+            <div class="temperature">
+              <img src="images/weather.svg" alt="" />
+              <span class="value"> <span>33</span><sup>°F</sup> </span>
+            </div>
+
+            <div class="summary">Partly Cloudly</div>
+
+            <dl>
+              <dt>Wind Speed:</dt>
+              <dd><span class="wind-speed">3.5</span> mp/h</dd>
+            </dl>
+            <dl>
+              <dt>Wind Chill:</dt>
+              <dd class="wind-chill">N/A</dd>
+            </dl>
+          </div>
+          <!--
           <a
             class="weatherwidget-io"
             href="https://forecast7.com/en/17d3978d49/hyderabad/"
@@ -110,6 +129,7 @@
               }
             })(document, "script", "weatherwidget-io-js");
           </script>
+          -->
         </div>
         <div class="join">
           <h3>Join HCOC</h3>
@@ -122,7 +142,22 @@
           <div class="button"><a href="#">Join Us!</a></div>
         </div>
         <div class="content">
-          <img src="images/building.jpg" alt="" />
+          <!--<img src="images/building.jpg" alt="" />-->
+          <picture>
+            <source
+              media="(min-width: 1000px)"
+              srcset="images/wdd230-org-large.webp"
+            />
+            <source
+              media="(min-width: 600px)"
+              srcset="images/wdd230-org-medium.webp"
+            />
+            <source
+              media="(max-width: 599px)"
+              srcset="images/wdd230-org-small.webp"
+            />
+            <img src="images/wdd230-org-large.webp" alt="" />
+          </picture>
 
           <h3>Welcome to HCOC</h3>
 
@@ -207,7 +242,7 @@
     <footer>
       <div class="columns">
         <div class="branding">
-          <img src="images/logo.png" alt="Hyderabad Chamber of Commerce" />
+          <img src="images/logo.webp" alt="Hyderabad Chamber of Commerce" />
 
           <address>
             Hyderabad Chamber of Commerce<br />
