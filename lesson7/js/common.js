@@ -13,14 +13,17 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
   if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver((items, observer) => {
-      items.forEach((item) => {
-        if (item.isIntersecting) {
-          load_image(item.target);
-          observer.unobserve(item.target);
-        }
-      });
-    }, {rootMargin: '0px 0px 100px 0px'});
+    const observer = new IntersectionObserver(
+      (items, observer) => {
+        items.forEach((item) => {
+          if (item.isIntersecting) {
+            load_image(item.target);
+            observer.unobserve(item.target);
+          }
+        });
+      },
+      { rootMargin: "0px 0px 100px 0px" }
+    );
 
     images.forEach((image) => {
       observer.observe(image);
