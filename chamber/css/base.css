@@ -263,6 +263,49 @@ main .spotlight address {
   text-align: center;
 }
 
+main .discover {
+  padding: 16px;
+  background-color: #535d73;
+  color: #f2f2f2;
+}
+main .discover h1 {
+  text-align: center;
+}
+main .discover table {
+  margin: 0 auto 3rem auto;
+  border-collapse: collapse;
+}
+main .discover table,
+main .discover th,
+main .discover td {
+  border: 1px solid #424a59;
+}
+main .discover table th {
+  text-align: left;
+}
+main .discover table th,
+main .discover table td {
+  padding: 1rem;
+  color: #262f40;
+}
+main .discover table tr:nth-child(odd) {
+  background-color: #e2e2e2;
+}
+main .discover table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+main .discover picture {
+  display: block;
+  margin: 0 auto 4rem auto;
+  max-width: 1200px;
+  text-align: center;
+}
+main .discover picture p {
+  padding: 0.5rem 0;
+  background-color: #f2f2f2;
+  color: #262f40;
+}
+
 footer {
   padding: 24px;
   background-color: #424a59;
