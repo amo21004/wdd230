@@ -297,7 +297,7 @@ main .discover table tr:nth-child(even) {
 main .discover picture {
   display: block;
   margin: 0 auto 4rem auto;
-  max-width: 1200px;
+  max-width: 900px;
   text-align: center;
 }
 main .discover picture p {
