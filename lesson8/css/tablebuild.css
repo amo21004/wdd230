@@ -22,6 +22,7 @@ main td {
 }
 main caption {
   background-color: #b3c100;
+  font-size: 1.5rem; font-weight: 700;
 }
 main thead {
   background-color: #1f3f49;
