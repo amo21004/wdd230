@@ -7,10 +7,10 @@
 
     <link rel="shortcut icon" href="favicon.ico" />
 
-    <title>Discover Hyderabad Chamber of Commerce</title>
+    <title>Join Hyderabad Chamber of Commerce</title>
     <meta
       name="description"
-      content="Discover page of Hyderabad Chamber of Commerce"
+      content="Joining page of Hyderabad Chamber of Commerce"
     />
     <link
       rel="stylesheet"
@@ -48,9 +48,9 @@
 
         <nav>
           <ul class="links">
-            <li><a href="./discover.html" class="active">Discover</a></li>
+            <li><a href="./discover.html">Discover</a></li>
             <li><a href="#">Directory</a></li>
-            <li><a href="./join.html">Join</a></li>
+            <li><a href="./join.html" class="active">Join</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
 
@@ -78,131 +78,98 @@
     </header>
 
     <main>
-      <section class="discover">
-        <h1>Discover Hyderabad</h1>
+      <section class="join">
+        <h1>Join Hyderabad Chamber of Commerce</h1>
 
-        <p>
-          You have visited this page <strong id="page-hits"></strong> time(s)
-        </p>
+        <form method="get" action="./thankyou.html">
+          <label>
+            First Name* <input type="text" name="first_name" required />
+          </label>
 
-        <h2>Statistics</h2>
+          <label>
+            Last Name* <input type="text" name="last_name" required />
+          </label>
 
-        <table>
-          <tbody>
-            <tr>
-              <th>Area</th>
-              <td>1,12,077 Sq. Kms.</td>
-            </tr>
-            <tr>
-              <th>Districts</th>
-              <td>33</td>
-            </tr>
-            <tr>
-              <th>Population</th>
-              <td>350.04 Lakhs</td>
-            </tr>
-            <tr>
-              <th>Households</th>
-              <td>83.04 Lakhs</td>
-            </tr>
-            <tr>
-              <th>Languages</th>
-              <td>Telugu, Urdu, Hindi</td>
-            </tr>
-          </tbody>
-        </table>
+          <label>
+            Title
+            <input
+              type="text"
+              name="title"
+              pattern="[A-Za-z \-]{7,}"
+              placeholder="Enter alphabets, spaces, and hyphens only (minimum 7 characters)"
+            />
+          </label>
 
-        <h2>Gallery</h2>
+          <label>
+            Email Address*
+            <input
+              type="email"
+              name="email_address"
+              required
+              placeholder="you@yourdomain.com"
+            />
+          </label>
 
-        <picture>
-          <img
-            src="images/placeholder.svg"
-            data-src="images/discover/1.webp"
-            alt=""
-          />
+          <label>
+            Cell Phone Number*
+            <input
+              type="tel"
+              name="cell_phone_number"
+              required
+              placeholder="+91-xxxxxxxxxx"
+            />
+          </label>
 
-          <p>Picture of Durgam Cheruvu lake in Hyderabad</p>
-        </picture>
+          <label>
+            Business Name* <input type="text" name="business_name" required />
+          </label>
 
-        <picture>
-          <img
-            src="images/placeholder.svg"
-            data-src="images/discover/2.webp"
-            alt=""
-          />
+          <p>Membership Level*</p>
 
-          <p>Golconda Fort</p>
-        </picture>
+          <label class="for-radio">
+            <input
+              type="radio"
+              name="membership_level"
+              value="non-profit"
+              required
+            />
+            Non-profit
+          </label>
 
-        <picture>
-          <img
-            src="images/placeholder.svg"
-            data-src="images/discover/3.webp"
-            alt=""
-          />
+          <label class="for-radio">
+            <input
+              type="radio"
+              name="membership_level"
+              value="Bronze"
+              required
+            />
+            Bronze
+          </label>
 
-          <p>Hyderabad Metro</p>
-        </picture>
+          <label class="for-radio">
+            <input
+              type="radio"
+              name="membership_level"
+              value="silver"
+              required
+            />
+            Silver
+          </label>
 
-        <picture>
-          <img
-            src="images/placeholder.svg"
-            data-src="images/discover/4.webp"
-            alt=""
-          />
+          <label class="for-radio">
+            <input type="radio" name="membership_level" value="gold" required />
+            Gold
+          </label>
 
-          <p>An urban area</p>
-        </picture>
+          <label>
+            Business Description
+            <textarea name="business_description"></textarea>
+          </label>
 
-        <picture>
-          <img
-            src="images/placeholder.svg"
-            data-src="images/discover/5.webp"
-            alt=""
-          />
+          <input type="hidden" name="current_date" />
 
-          <p>Qutub shahi Tombs</p>
-        </picture>
-
-        <picture>
-          <img
-            src="images/placeholder.svg"
-            data-src="images/discover/6.webp"
-            alt=""
-          />
-
-          <p>World Famous Hyderabadi Biryani</p>
-        </picture>
-
-        <picture>
-          <img
-            src="images/placeholder.svg"
-            data-src="images/discover/7.webp"
-            alt=""
-          />
-
-          <p>Gachibowli Road</p>
-        </picture>
-
-        <picture>
-          <img
-            src="images/placeholder.svg"
-            data-src="images/discover/8.webp"
-            alt=""
-          />
-
-          <p>Hussain Sagar Lake</p>
-        </picture>
-
-        <picture>
-          <img
-            src="images/placeholder.svg"
-            data-src="images/discover/9.webp"
-            alt=""
-          />
-
-          <p>Hitech City</p>
-        </picture>
+          <input type="submit" value="Join Now!" />
+        </form>
       </section>
     </main>
 

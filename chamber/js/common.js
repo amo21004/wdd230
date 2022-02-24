@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   page_hits();
 
   load_images();
+
+  join_current_date();
 });
 
 function mobile_toggle() {
@@ -39,6 +41,10 @@ function date_related() {
 }
 
 function page_hits() {
+  if (!document.querySelector("#page-hits")) {
+    return;
+  }
+
   var page_hits = localStorage.getItem("discover-page-hits");
 
   if (!page_hits) {
@@ -87,4 +93,12 @@ function load_images() {
       load_image(image);
     });
   }
+}
+
+function join_current_date() {
+  if (!document.querySelector('form input[name="current_date"]')) {
+    return;
+  }
+
+  document.querySelector('form input[name="current_date"]').value = new Date();
 }
