@@ -1,0 +1,40 @@
+body {
+  padding: 2rem;
+  text-align: center;
+  background-color: #e5eec1;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.page {
+  margin: auto;
+  max-width: 1400px;
+}
+
+header h1 {
+  margin: 0 0 3rem 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.cards section {
+  margin: 0 1rem 4rem 1rem;
+  padding: 1rem;
+  background-color: #a2d4ab;
+  border: 1px solid #547a8266;
+  box-shadow: 0px 0px 15px 5px #3eaca866;
+  color: #5a5050;
+  transition: all 0.25s;
+}
+.cards section:hover {
+  border: 1px solid #547a82cc;
+  box-shadow: 0px 0px 15px 5px #3eaca8cc;
+}
+.cards h2,
+.cards .birth {
+  margin: 0 0 1rem 0;
+}
+.cards img {
+  max-width: 100%;
+}
