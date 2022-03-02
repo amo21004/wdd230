@@ -42,7 +42,6 @@ window.addEventListener("DOMContentLoaded", function () {
         website.textContent = listing.website_url
           .replace("https://", "")
           .replace("http://", "")
-          .replace("www.", "")
           .replace("/", "");
 
         website.href = listing.website_url;
