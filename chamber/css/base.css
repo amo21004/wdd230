@@ -363,7 +363,7 @@ main .listings a:hover {
   text-decoration: none;
 }
 main .listings section > * {
-  word-break: break-all;
+  word-break: break-word;
 }
 
 main .listings-grid {
