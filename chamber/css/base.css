@@ -362,6 +362,9 @@ main .listings a {
 main .listings a:hover {
   text-decoration: none;
 }
+main .listings section > * {
+  word-break: break-all;
+}
 
 main .listings-grid {
   display: grid;
