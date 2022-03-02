@@ -7,10 +7,10 @@
 
     <link rel="shortcut icon" href="favicon.ico" />
 
-    <title>Join Hyderabad Chamber of Commerce</title>
+    <title>Hyderabad Chamber of Commerce Business Directory</title>
     <meta
       name="description"
-      content="Joining page of Hyderabad Chamber of Commerce"
+      content="Hyderabad Chamber of Commerce Business Directory"
     />
     <link
       rel="stylesheet"
@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
 
+    <script src="js/directory.js"></script>
     <script src="js/common.js"></script>
   </head>
   <body>
@@ -49,8 +50,8 @@
         <nav>
           <ul class="links">
             <li><a href="./discover.html">Discover</a></li>
-            <li><a href="./directory.html">Directory</a></li>
-            <li><a href="./join.html" class="active">Join</a></li>
+            <li><a href="./directory.html" class="active">Directory</a></li>
+            <li><a href="./join.html">Join</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
 
@@ -78,99 +79,15 @@
     </header>
 
     <main>
-      <section class="join">
-        <h1>Join Hyderabad Chamber of Commerce</h1>
+      <h1>Business Listings</h1>
 
-        <form method="get" action="./thankyou.html">
-          <label>
-            First Name* <input type="text" name="first_name" required />
-          </label>
+      <div class="view-mode">
+        <img src="images/grid-view-icon.webp" data-mode="grid" alt="" />
 
-          <label>
-            Last Name* <input type="text" name="last_name" required />
-          </label>
+        <img src="images/list-view-icon.webp" data-mode="list" alt="" />
+      </div>
 
-          <label>
-            Title
-            <input
-              type="text"
-              name="title"
-              pattern="[A-Za-z \-]{7,}"
-              placeholder="Enter alphabets, spaces, and hyphens only (minimum 7 characters)"
-            />
-          </label>
-
-          <label>
-            Email Address*
-            <input
-              type="email"
-              name="email_address"
-              required
-              placeholder="you@yourdomain.com"
-            />
-          </label>
-
-          <label>
-            Cell Phone Number*
-            <input
-              type="tel"
-              name="cell_phone_number"
-              required
-              placeholder="+91-xxxxxxxxxx"
-            />
-          </label>
-
-          <label>
-            Business Name* <input type="text" name="business_name" required />
-          </label>
-
-          <p>Membership Level*</p>
-
-          <label class="for-radio">
-            <input
-              type="radio"
-              name="membership_level"
-              value="non-profit"
-              required
-            />
-            Non-profit
-          </label>
-
-          <label class="for-radio">
-            <input
-              type="radio"
-              name="membership_level"
-              value="Bronze"
-              required
-            />
-            Bronze
-          </label>
-
-          <label class="for-radio">
-            <input
-              type="radio"
-              name="membership_level"
-              value="silver"
-              required
-            />
-            Silver
-          </label>
-
-          <label class="for-radio">
-            <input type="radio" name="membership_level" value="gold" required />
-            Gold
-          </label>
-
-          <label>
-            Business Description
-            <textarea name="business_description"></textarea>
-          </label>
-
-          <input type="hidden" name="current_date" />
-
-          <input type="submit" value="Join Now!" />
-        </form>
-      </section>
+      <div class="listings"></div>
     </main>
 
     <footer>

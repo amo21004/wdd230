@@ -24,6 +24,18 @@
       "join news spotlight";
   }
 
+  main .listings {
+    padding: 2rem;
+  }
+
+  main .listings-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  main .listings-grid section {
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+
   footer .contact {
     flex: 0.25;
   }

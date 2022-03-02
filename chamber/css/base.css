@@ -340,6 +340,88 @@ main .join input[type="submit"] {
   cursor: pointer;
 }
 
+main .view-mode {
+  margin: 0 0 2rem 0;
+  padding: 1rem 0;
+  background-color: #fff;
+  text-align: center;
+}
+main .view-mode img {
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+main .listings {
+  padding: 1rem;
+  background-color: #f2f2f2;
+  color: #262f40;
+}
+main .listings a {
+  text-underline-offset: 0.25rem;
+}
+main .listings a:hover {
+  text-decoration: none;
+}
+
+main .listings-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  text-align: center;
+}
+main .listings-grid section {
+  margin: 0 0 1rem 0;
+  padding: 1rem 0.75rem;
+  background-color: #262f40;
+  box-shadow: 0px 0px 6px 3px #262f4055;
+  color: #f2f2f2;
+}
+main .listings-grid section > * {
+  display: block;
+}
+main .listings-grid img {
+  margin: 0 auto 1.5rem auto;
+  width: 75%;
+  height: 100px;
+  object-fit: contain;
+}
+main .listings-grid h2 {
+  margin: 0 0 1rem 0;
+}
+main .listings-grid address {
+  margin: 0 0 0.75rem 0;
+}
+main .listings-grid a:not(:last-child) {
+  margin: 0 0 0.75rem 0;
+}
+
+main .listings-list section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  background-color: #262f40;
+  color: #f2f2f2;
+}
+main .listings-list section:nth-child(even) {
+  background-color: #4d5666;
+}
+main .listings-list section:not(:last-child) {
+  margin: 0 0 2rem 0;
+}
+main .listings-list section > * {
+  flex: 1;
+}
+main .listings-list section > *:not(:last-child) {
+  margin: 0 0 1rem 0;
+}
+main .listings-list img {
+  display: none;
+}
+main .listings-list h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
 footer {
   padding: 24px;
   background-color: #424a59;

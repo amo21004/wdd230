@@ -1,0 +1,88 @@
+{
+  "listings": [
+    {
+      "name": "R Systems",
+      "address": "5000 Windplay Dr., Suite 5, El Dorado Hills, CA 95762",
+      "phone_number": "916-939-9696",
+      "website_url": "https://www.rsystems.com/",
+      "logo_url": "https://www.rsystems.com/wp-content/themes/rsystems/images/rsystems-logo.png"
+    },
+    {
+      "name": "Hindware",
+      "address": "#808, Tikri Kalan Extension, Delhi, ND 110041",
+      "phone_number": "33-2248-7406",
+      "website_url": "https://www.hindwarehomes.com/",
+      "logo_url": "https://www.hindwarehomes.com/wp-content/themes/hindware/assets/images/Logo.svg"
+    },
+    {
+      "name": "3i Infotech",
+      "address": "Tower #5, International Infotech Park, Vashi, Navi Mumbai, MH 400703",
+      "phone_number": "22-7123-8000",
+      "website_url": "https://www.3i-infotech.com/",
+      "logo_url": "https://www.3i-infotech.com/wp-content/uploads/2021/06/3i-logo-black-bkg-1.png"
+    },
+    {
+      "name": "Rolta",
+      "address": "21st Floor, Maker Tower F, Cuffe Parade, Mumbai, MH 400005",
+      "phone_number": "22-2215-3984",
+      "website_url": "http://www.rolta.com/",
+      "logo_url": "http://www.rolta.com/wp-content/themes/twentyten/images/rolta_logo.png"
+    },
+    {
+      "name": "GSS Infotech",
+      "address": "#12, Madhapur, Hyderabad, TS 500081",
+      "phone_number": "40-4455-6600",
+      "website_url": "https://www.gssinfotech.com/",
+      "logo_url": "https://www.gssinfotech.com/wp-content/uploads/2019/11/Picture1-1.png"
+    },
+    {
+      "name": "D-Wave Systems",
+      "address": "3033 Beta Avenue, Burnaby, BC V5G4M9",
+      "phone_number": "604-630-1428",
+      "website_url": "https://www.dwavesys.com/",
+      "logo_url": "https://www.dwavesys.com/media/j31olsrx/d-wave.svg"
+    },
+    {
+      "name": "Idaho Websites",
+      "address": "2115 S Vista Ave, Boise, ID 83705",
+      "phone_number": "208-342-9386",
+      "website_url": "https://idahowebsites.com/",
+      "logo_url": "https://idahowebsites.com/wp-content/uploads/2019/06/logo-idweb.svg"
+    },
+    {
+      "name": "Surge Web Design",
+      "address": "12965 W Paint Dr, Boise, ID 83713",
+      "phone_number": "208-391-3413",
+      "website_url": "https://www.surgewebdesign.com/",
+      "logo_url": "https://02f0a56ef46d93f03c90-22ac5f107621879d5667e0d7ed595bdb.ssl.cf2.rackcdn.com/sites/26472/logo_images/119675_original.png?1596723766"
+    },
+    {
+      "name": "Graphic Zen",
+      "address": "1788 E Summerplace Ct, Meridian, ID 83646",
+      "phone_number": "208-556-8866",
+      "website_url": "https://graphiczen.com/",
+      "logo_url": "https://ekj86sgr4v6.exactdn.com/wp-content/uploads/2020/07/Graphic_Zen_logo_white-1.svg"
+    },
+    {
+      "name": "Peppershock Media",
+      "address": "1215 3rd St. S., Nampa, ID 83651",
+      "phone_number": "208-461-5070",
+      "website_url": "https://www.peppershock.com/",
+      "logo_url": "https://www.peppershock.com/wp-content/uploads/2017/08/PPSK-Logo-2017-HorizontalWhite-1-1.png"
+    },
+    {
+      "name": "Flash Tech Inc",
+      "address": "920 Washington St, Hoboken, NJ 07030",
+      "phone_number": "201-656-3800",
+      "website_url": "https://www.flashtech.com/",
+      "logo_url": "https://www.flashtech.com/wp-content/themes/theme1591/images/logo.png"
+    },
+    {
+      "name": "Metro Express Car Wash",
+      "address": "1725 E Overland Rd, Meridian, ID 83642",
+      "phone_number": "208-820-2077",
+      "website_url": "https://www.metroexpresscarwash.com/",
+      "logo_url": "https://www.metroexpresscarwash.com/wp-content/uploads/cropped-Metro-Express-Sparkle-Logo-2048x1416.png"
+    }
+  ]
+}
