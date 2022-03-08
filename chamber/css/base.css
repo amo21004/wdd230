@@ -166,7 +166,7 @@ main .event p {
 }
 
 main .weather .temperature-widget {
-  max-width: 200px;
+  max-width: 250px;
   text-align: center;
 }
 main .weather .temperature-widget img {
@@ -185,6 +185,7 @@ main .weather .temperature-widget .summary {
   margin: 0 0 12px 0;
   padding: 0 0 12px 0;
   border-bottom: 1px solid #fff;
+  text-transform: capitalize;
 }
 main .weather .temperature-widget dl {
   display: flex;

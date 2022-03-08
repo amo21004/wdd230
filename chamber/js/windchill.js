@@ -1,19 +1,38 @@
 window.addEventListener("DOMContentLoaded", function () {
-  const temperature = document.querySelector(
-    "main .weather .temperature-widget .temperature .value span"
-  ).innerText;
+  const apiURL =
+    "https://api.openweathermap.org/data/2.5/weather?id=1269843&units=metric&appid=2c9072d3042deb6c2e93339a55255572";
 
-  const speed = document.querySelector(
-    "main .weather .temperature-widget .wind-speed"
-  ).innerText;
+  fetch(apiURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+      const temperature = jsObject.main.temp;
 
-  wind_chill = calculate_wind_chill(temperature, speed);
+      document.querySelector(
+        "main .weather .temperature-widget .temperature .value span"
+      ).innerText = temperature;
 
-  if (wind_chill) {
-    document.querySelector(
-      "main .weather .temperature-widget .wind-chill"
-    ).innerText = wind_chill;
-  }
+      const speed = jsObject.wind.speed;
+
+      document.querySelector(
+        "main .weather .temperature-widget .wind-speed"
+      ).innerText = speed;
+
+      document.querySelector(
+        "main .weather .temperature-widget .summary"
+      ).innerText = jsObject.weather[0].description;
+
+      document.querySelector(
+        "main .weather .temperature-widget img"
+      ).src = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+
+      wind_chill = calculate_wind_chill(temperature, speed);
+
+      if (wind_chill) {
+        document.querySelector(
+          "main .weather .temperature-widget .wind-chill"
+        ).innerText = wind_chill;
+      }
+    });
 });
 
 function calculate_wind_chill(t, s) {
