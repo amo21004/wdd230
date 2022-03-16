@@ -49,6 +49,10 @@ window.addEventListener("DOMContentLoaded", function () {
 
         item.appendChild(address);
 
+        let hr = document.createElement("hr");
+
+        item.appendChild(hr);
+
         let phone = document.createElement("a");
 
         phone.textContent = listing.phone_number;
