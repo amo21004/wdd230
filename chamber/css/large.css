@@ -36,6 +36,14 @@
     padding: 1.5rem;
   }
 
+  main .join .columns > * {
+    flex: 1;
+  }
+  main .join .columns > *:first-child {
+    margin: 0 2rem 0 0;
+    order: 0;
+  }
+
   footer .contact {
     flex: 0.25;
   }

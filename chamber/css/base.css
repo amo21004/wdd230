@@ -166,7 +166,8 @@ main .event p {
 }
 
 main .weather .temperature-widget {
-  margin: 0 auto; padding: 1rem;
+  margin: 0 auto;
+  padding: 1rem;
   max-width: 250px;
   text-align: center;
   background-color: #f2f2f2;
@@ -175,7 +176,8 @@ main .weather .temperature-widget {
   color: #262f40;
 }
 main .weather .temperature-widget img {
-  width: 50px; height: 50px;
+  width: 50px;
+  height: 50px;
 }
 main .weather .temperature-widget .temperature {
   display: flex;
@@ -253,6 +255,7 @@ main .news li:not(:last-child) {
 
 main .spotlight section {
   padding: 16px;
+  text-align: center;
   background-color: #f2f2f2;
   color: #262f40;
 }
@@ -260,14 +263,11 @@ main .spotlight section:not(:last-child) {
   margin: 0 0 24px 0;
 }
 main .spotlight hr {
-  margin: 16px 0;
-}
-main .spotlight .links {
-  text-align: center;
+  margin: 1rem 0;
 }
 main .spotlight address {
-  margin: 8px 0 0 0;
-  text-align: center;
+  margin: 1rem 0;
+  font-style: italic;
 }
 
 main .discover {
@@ -316,6 +316,17 @@ main .discover picture p {
 main .join h1 {
   text-align: center;
 }
+main .join .columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .join .columns > * {
+  flex-basis: 100%;
+}
+main .join .columns > *:first-child {
+  margin: 2rem 0 0 0;
+  order: 1;
+}
 main .join form {
   padding: 2rem;
   background-color: #f2f2f2;
@@ -345,6 +356,18 @@ main .join input[type="submit"] {
   border: 2px solid #424a59;
   color: #fff;
   cursor: pointer;
+}
+main .join section {
+  padding: 2rem;
+  background-color: #f2f2f2;
+  color: #262f40;
+}
+main .join section iframe {
+  margin: 0 0 2rem 0;
+  width: 100%;
+}
+main .join section address {
+  font-style: normal;
 }
 
 main .view-mode {

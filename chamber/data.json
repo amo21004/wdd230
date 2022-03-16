@@ -5,14 +5,16 @@
       "address": "5000 Windplay Dr., Suite 5, El Dorado Hills, CA 95762",
       "phone_number": "916-939-9696",
       "website_url": "https://www.rsystems.com/",
-      "logo_url": "https://www.rsystems.com/wp-content/themes/rsystems/images/rsystems-logo.png"
+      "logo_url": "https://www.rsystems.com/wp-content/themes/rsystems/images/rsystems-logo.png",
+      "featured": true
     },
     {
       "name": "Hindware",
       "address": "#808, Tikri Kalan Extension, Delhi, ND 110041",
       "phone_number": "33-2248-7406",
       "website_url": "https://www.hindwarehomes.com/",
-      "logo_url": "https://www.hindwarehomes.com/wp-content/themes/hindware/assets/images/Logo.svg"
+      "logo_url": "https://www.hindwarehomes.com/wp-content/themes/hindware/assets/images/Logo.svg",
+      "featured": true
     },
     {
       "name": "3i Infotech",
@@ -33,7 +35,8 @@
       "address": "#12, Madhapur, Hyderabad, TS 500081",
       "phone_number": "40-4455-6600",
       "website_url": "https://www.gssinfotech.com/",
-      "logo_url": "https://www.gssinfotech.com/wp-content/uploads/2019/11/Picture1-1.png"
+      "logo_url": "https://www.gssinfotech.com/wp-content/uploads/2019/11/Picture1-1.png",
+      "featured": true
     },
     {
       "name": "D-Wave Systems",
@@ -47,7 +50,8 @@
       "address": "2115 S Vista Ave, Boise, ID 83705",
       "phone_number": "208-342-9386",
       "website_url": "https://www.idahowebsites.com/",
-      "logo_url": "https://idahowebsites.com/wp-content/uploads/2019/06/logo-idweb.svg"
+      "logo_url": "https://idahowebsites.com/wp-content/uploads/2019/06/logo-idweb.svg",
+      "featured": true
     },
     {
       "name": "Surge Web Design",
