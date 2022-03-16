@@ -7,10 +7,10 @@
 
     <link rel="shortcut icon" href="favicon.ico" />
 
-    <title>Thank you for joining us!</title>
+    <title>Contact Hyderabad Chamber of Commerce</title>
     <meta
       name="description"
-      content="Thank you page of Hyderabad Chamber of Commerce"
+      content="Contact page of Hyderabad Chamber of Commerce"
     />
     <link
       rel="stylesheet"
@@ -50,8 +50,8 @@
           <ul class="links">
             <li><a href="./discover.html">Discover</a></li>
             <li><a href="./directory.html">Directory</a></li>
-            <li><a href="./join.html" class="active">Join</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./contact.html" class="active">Contact</a></li>
           </ul>
 
           <ul class="social">
@@ -78,12 +78,42 @@
     </header>
 
     <main>
-      <h1>Thank you!</h1>
+      <section class="join">
+        <h1>Join Hyderabad Chamber of Commerce</h1>
 
-      <p>
-        Thank you for joining Hyderabad Chamber of Commerce. Your request has
-        been received.
-      </p>
+        <form method="get" action="./thankyou.html">
+          <label>
+            Full Name* <input type="text" name="full_name" required />
+          </label>
+
+          <label>
+            Email Address*
+            <input
+              type="email"
+              name="email_address"
+              required
+              placeholder="you@yourdomain.com"
+            />
+          </label>
+
+          <label>
+            Phone Number*
+            <input
+              type="tel"
+              name="phone_number"
+              required
+              placeholder="+91-xxxxxxxxxx"
+            />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message"></textarea>
+          </label>
+
+          <input type="submit" value="Send Message!" />
+        </form>
+      </section>
     </main>
 
     <footer>
