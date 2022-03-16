@@ -1,6 +1,5 @@
 window.addEventListener("DOMContentLoaded", function () {
   const requestURL = "https://amo21004.github.io/wdd230/chamber/data.json";
-  //const requestURL = "http://127.0.0.1:5500/data.json";
 
   fetch(requestURL)
     .then(function (response) {
