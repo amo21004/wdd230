@@ -15,6 +15,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
         image.src = listing.logo_url;
 
+        image.alt = listing.name;
+
         item.appendChild(image);
 
         let h2 = document.createElement("h2");
