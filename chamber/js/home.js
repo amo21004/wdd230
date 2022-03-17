@@ -34,6 +34,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
         image.src = listing.logo_url;
 
+        image.alt = listing.name;
+
         item.appendChild(image);
 
         let h3 = document.createElement("h3");
