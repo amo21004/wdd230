@@ -1,0 +1,20 @@
+body {
+  padding: 1rem;
+}
+
+header,
+main,
+footer {
+  padding: 1rem;
+}
+
+header nav .social {
+  display: none;
+}
+
+footer .columns {
+  display: block;
+}
+footer .contact {
+  word-break: break-all;
+}

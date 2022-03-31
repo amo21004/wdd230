@@ -1,0 +1,310 @@
+/*
+Color Palette
+
+#28696a - green
+#f4ae3f - yellow
+#f0e6d7 - cream
+#213058 - blue
+*/
+
+body {
+  padding: 2rem;
+  background-color: #f0e6d7;
+  font-family: "Open Sans", sans-serif;
+  color: #213058;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header,
+main,
+footer,
+.current-temperature,
+.temperature-forecast {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+
+.current-temperature {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+header {
+  position: relative;
+  color: #28696a;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header .columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: end;
+  align-items: center;
+}
+header nav .links {
+  display: none;
+}
+header nav .social {
+  display: flex;
+}
+header .social img {
+  width: 36px;
+}
+header .social li:not(:last-child) {
+  margin: 0 1rem 0 0;
+}
+header .social img {
+  transition: all 0.25s;
+}
+header .social a:hover img {
+  transform: scaleX(-1);
+}
+header .toggle {
+  margin: 0 0 0 1rem;
+}
+header .toggle .none {
+  display: none;
+}
+
+.current-temperature {
+  display: none;
+  margin: 2rem 0;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.current-temperature.is-visible {
+  display: flex;
+}
+.current-temperature span * {
+  vertical-align: middle;
+}
+.current-temperature .close {
+  margin: 0 0 0 1rem;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  margin: 2rem 0;
+}
+.hero img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.hero .underlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000099;
+  border-radius: 2rem;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  color: #fff;
+}
+.hero a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #f4ae3f;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #28696a;
+  text-decoration: none;
+}
+
+.temperature-forecast .item {
+  margin: 0 0 1rem 0;
+  padding: 1rem 2rem;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #28696a;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+main {
+  margin: 2rem 0;
+}
+main > *:first-child {
+  margin-top: 0;
+}
+main > *:last-child {
+  margin-bottom: 0;
+}
+
+main .introduction {
+  line-height: 2;
+}
+
+main .reservation form {
+  margin: 2rem 0 0 0;
+}
+main .reservation fieldset {
+  margin: 0 0 2rem 0;
+  padding: 0 2rem;
+  border-color: #213058;
+  border-width: 1px;
+}
+main .reservation legend {
+  padding: 0.5rem 1rem;
+  background-color: #213058;
+  color: #f0e6d7;
+}
+main .reservation label {
+  display: block;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+main .reservation label > * {
+  display: block;
+  margin: 0.5rem 0 0 0;
+  padding: 1rem 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #213058;
+}
+main .reservation input[type="submit"] {
+  padding: 1rem 2rem;
+  background-color: #213058;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+main .temples .status {
+  margin: 1rem 0;
+}
+main .temples address {
+  margin: 0 0 1rem 0;
+}
+main .temples .information {
+  margin: 0 0 1rem 0;
+}
+main .temples .like span {
+  display: inline-block;
+  padding: 9px;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  cursor: pointer;
+}
+main .temples .like span:hover,
+main .temples .like span.liked {
+  background-color: #f0e6d7;
+  border-color: #f4ae3f;
+}
+
+main .services li:not(:last-child) {
+  margin: 0 0 1rem 0;
+}
+
+main .reception .gallery .item {
+  margin: 0 0 1rem 0;
+}
+main .reception .table {
+  overflow-x: auto;
+}
+main .reception table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+}
+main .reception caption {
+  margin: 0 0 1rem 0;
+  padding: 0.5rem 0;
+  border: 1px solid #213058;
+  font-weight: bold;
+}
+main .reception tr > * {
+  padding: 1rem;
+  border: 1px solid #213058;
+  text-align: left;
+  vertical-align: top;
+}
+main .reception li:not(:last-child) {
+  margin: 0 0 0.5rem 0;
+}
+
+main .suites label {
+  display: block;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+main .suites label > * {
+  display: block;
+  margin: 0.5rem 0 0 0;
+  padding: 1rem 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #213058;
+}
+main .suites input[type="submit"] {
+  padding: 1rem 2rem;
+  background-color: #213058;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer {
+  line-height: 1.5;
+}
+footer address {
+  margin: 0 0 1rem 0;
+}
+footer hr {
+  margin: 1.5rem 0;
+}
+footer .copyright {
+  text-align: center;
+}

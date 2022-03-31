@@ -1,0 +1,34 @@
+.current-temperature {
+  align-items: center;
+}
+
+.temperature-forecast .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main .reception .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+main .reception .gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+main .suites .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .suites .list .item {
+  margin: 0 0 1rem 0;
+}
+main .suites .list img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}

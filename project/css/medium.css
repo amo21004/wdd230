@@ -1,0 +1,18 @@
+.temperature-forecast .item {
+  flex-basis: 34%;
+}
+
+main .reception .gallery .item {
+  flex-basis: calc(50% - 1rem);
+}
+
+main .suites .list {
+  gap: 1rem;
+}
+main .suites .list .item {
+  flex-basis: calc(50% - 0.5rem);
+}
+
+footer .columns .map {
+  margin: 0 0 2rem 0;
+}

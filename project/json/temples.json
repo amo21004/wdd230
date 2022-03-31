@@ -1,0 +1,40 @@
+{
+  "temples": [
+    {
+      "name": "Birmingham Alabama Temple",
+      "address": "1927 Mount Olive Blvd\nGardendale AL 35071\nUnited States",
+      "telephone": "(1) 205-631-3444",
+      "services": "No clothing rental available\nNo cafeteria available\nNo patron housing available\nNo distribution center nearby",
+      "status": "Closed",
+      "ordinance_information": "Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple.            ",
+      "image": "birmingham-alabama-temple.webp"
+    },
+    {
+      "name": "Provo Utah Temple",
+      "address": "2200 Temple Hill Dr\nProvo UT 84604-1775\nUnited States",
+      "telephone": "(1) 801-375-5775",
+      "services": "Clothing rental available\nNo cafeteria available\nNo patron housing available\nDistribution center nearby",
+      "status": "Limited Operations",
+      "ordinance_information": "Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple.",
+      "image": "provo-utah-temple.webp"
+    },
+    {
+      "name": "Mesa Arizona Temple",
+      "address": "101 S LeSueur\nMesa AZ 85204-1031\nUnited States",
+      "telephone": "(1) 480-833-1211",
+      "services": "Clothing rental available\nNo cafeteria available\nNo patron housing available\nDistribution center nearby",
+      "status": "Limited Operations",
+      "ordinance_information": "Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple.",
+      "image": "mesa-arizona-temple.webp"
+    },
+    {
+      "name": "Monticello Utah Temple",
+      "address": "365 N 200 W\nMonticello UT 84535\nUnited States",
+      "telephone": "(1) 435-587-3500",
+      "services": "No clothing rental available\nNo cafeteria available\nNo patron housing available\nNo distribution center nearby",
+      "status": "Limited Operations",
+      "ordinance_information": "Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple.",
+      "image": "monticello-utah-temple.webp"
+    }
+  ]
+}
